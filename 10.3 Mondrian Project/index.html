@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .grid-container {
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 132px 155px 20px;
+        gap: 9px;
+      }
+
+      .red-item {
+        background-color: #e72f24;
+      }
+
+      .transparent-item-1 {
+        background-color: #f0f1ec;
+        grid-column: span 3;
+      }
+      .transparent-item-2 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+      .transparent-item-3 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .blue-item {
+        background-color: #004592;
+        border-bottom: 10px solid;
+      }
+      .transparent-item-4 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+      .transparent-item-5 {
+        background-color: #f0f1ec;
+      }
+      .yellow-item {
+        background-color: #F9D01E;
+      }
+      .black-item {
+        background-color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="grid-container">
+      <div class="red-item"></div>
+      <div class="transparent-item-1"></div>
+      <div class="transparent-item-2"></div>
+      <div class="transparent-item-3"></div>
+      <div class="blue-item"></div>
+      <div class="transparent-item-4"></div>
+      <div class="transparent-item-5"></div>
+      <div class="yellow-item"></div>
+      <div class="black-item"></div>
+    </div>
+  </body>
+</html>
